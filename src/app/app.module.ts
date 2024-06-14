@@ -20,6 +20,10 @@ import { PasswordCreatorComponent } from './password-creator/password-creator.co
 import { PasswordManagerComponent } from './password-manager/password-manager.component';
 import { ModifyPasswordComponent } from './modify-password/modify-password.component';
 import { DeletePasswordComponent } from './delete-password/delete-password.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { DeleteModalComponent } from './delete-modal/delete-modal.component';
 
 
 
@@ -40,15 +44,20 @@ import { DeletePasswordComponent } from './delete-password/delete-password.compo
     PasswordManagerComponent,
     ModifyPasswordComponent,
     DeletePasswordComponent,
+    DeleteModalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
+    MatDialogModule,
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -34,24 +34,27 @@ export class PasswordService {
       throw error;
     }
   }
- /* async deletePassword(id: string): Promise<any> {
+  async deletePassword(id: string): Promise<any> {
     try {
       const token = this.authService.getToken();
       if (!token) {
         throw new Error('No token available');
       }
+
       const config = {
         headers: {
           Authorization: `Bearer ${token}`
         }
       };
+
       const response = await axios.delete(`${this.apiUrl}/delete/${id}`, config);
+
       return response.data;
     } catch (error) {
-      console.error('Error deleting password:', error);
+     
+   
       throw error;
     }
-  }*/
-
+  }
 
 }

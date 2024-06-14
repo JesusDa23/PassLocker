@@ -9,7 +9,7 @@ import { CreateCodeComponent } from './login/create-code/create-code.component';
 import { PasswordCreatorComponent } from './password-creator/password-creator.component';
 import { PasswordManagerComponent } from './password-manager/password-manager.component';
 import { ModifyPasswordComponent } from './modify-password/modify-password.component';
-import { DeletePasswordComponent } from './delete-password/delete-password.component';
+
 
 
 const routes: Routes = [
@@ -49,11 +49,7 @@ const routes: Routes = [
     path: 'modificarContraseña/:id',
     component: ModifyPasswordComponent
   },
-  {
-   path:  'deletePassword/:id',
-   component: DeletePasswordComponent,
-   
-  }
+  
 ];
 
 @NgModule({
