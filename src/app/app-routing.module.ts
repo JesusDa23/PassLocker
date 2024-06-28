@@ -10,9 +10,7 @@ import { PasswordCreatorComponent } from './password-creator/password-creator.co
 import { PasswordManagerComponent } from './password-manager/password-manager.component';
 import { ModifyPasswordComponent } from './modify-password/modify-password.component';
 import { AuthGuard } from './guard/auth/auth.guard';
-import { FormularioLoginComponent } from './login/formulario-login/formulario-login.component';
-import { CodeUsedGuard } from './guard/auth/code-used-guard.guard';
-import { PasswordResetGuard } from './guard/auth/pasword-reset.guard';
+
 
 
 const routes: Routes = [
@@ -38,7 +36,7 @@ const routes: Routes = [
   },
   {
     path: 'verifyCode',
-    component: CreateCodeComponent, canActivate: [AuthGuard, CodeUsedGuard]
+    component: CreateCodeComponent, canActivate: [AuthGuard]
   },
   {
     path: 'createPassword',
