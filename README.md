@@ -33,11 +33,11 @@ Back-end (Docker || Nest.js || Node.js || PostgreSQL): https://github.com/fAlfar
 
 Acción Apoyada por Adoptaunjunior.es
 
-Este proyecto está siendo desarrollado en colaboración con [Adoptaunjunior.es](https://adoptaunjunior.es/), una iniciativa dedicada a apoyar y promover el desarrollo profesional y educativo de jóvenes talentosos en el campo de [especificar el campo, por ejemplo, tecnología, diseño, etc.].
+Este proyecto está siendo desarrollado en colaboración con [Adoptaunjunior.es](https://adoptaunjunior.es/), una iniciativa dedicada a apoyar y promover el desarrollo profesional y educativo de jóvenes talentosos en el campo de Tecnología .
 
 Sobre Adoptaunjunior.es
 
-[Adoptaunjunior.es](https://adoptaunjunior.es/) se dedica a conectar a profesionales y empresas con jóvenes talentosos que buscan oportunidades de aprendizaje y desarrollo en [especificar el campo]. Ofrecen programas de mentoría, cursos de formación y eventos para impulsar el crecimiento profesional de los participantes.
+[Adoptaunjunior.es](https://adoptaunjunior.es/) se dedica a conectar a profesionales y empresas con jóvenes talentosos que buscan oportunidades de aprendizaje y desarrollo tecnológico. Ofrecen programas de mentoría, cursos de formación y eventos para impulsar el crecimiento profesional de los participantes.
 
 
 
