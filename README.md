@@ -1,27 +1,46 @@
-# PassLocker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+PassLocker
 
-## Development server
+La aplicación para la gestión de contraseñas es una solución innovadora y confiable diseñada para ayudar a usuarios individuales, profesionales, pequeñas empresas y organizaciones a manejar sus contraseñas de manera segura y conveniente. Ofrece funcionalidades avanzadas como generación 
+automática de contraseñas seguras con opciones personalizables de longitud y complejidad.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+Equipo: 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Front-end: Jesús Chavarro | Suelen Ranucci Glhardo
+Back-end: Fernando Alfaro | Todor Saltirov Ivanov
+DevOps: Geronimo Concina | Pame Yommasini
+Diseñadora UX/UI: Eva 
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+Documento Brief :  https://drive.google.com/file/d/1Egmor0h20tgybO20s4B8Wc3Uw2R7p8N8/view
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Figma:  https://www.figma.com/design/eOO8rktt5EnMitZOduKvfL/PASSLOCKER-(Copy)?node-id=101-3424&m=dev
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Aplicación :  
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Repositorios: 
+
+Front-end (TypeScript || Angular): https://github.com/JesusDa23/PassLocker
+
+
+Back-end (Docker || Nest.js || Node.js || PostgreSQL): https://github.com/fAlfaro21/PassLocker-Back
+
+
+
+Acción Apoyada por Adoptaunjunior.es
+
+Este proyecto está siendo desarrollado en colaboración con [Adoptaunjunior.es](https://adoptaunjunior.es/), una iniciativa dedicada a apoyar y promover el desarrollo profesional y educativo de jóvenes talentosos en el campo de [especificar el campo, por ejemplo, tecnología, diseño, etc.].
+
+Sobre Adoptaunjunior.es
+
+[Adoptaunjunior.es](https://adoptaunjunior.es/) se dedica a conectar a profesionales y empresas con jóvenes talentosos que buscan oportunidades de aprendizaje y desarrollo en [especificar el campo]. Ofrecen programas de mentoría, cursos de formación y eventos para impulsar el crecimiento profesional de los participantes.
+
+
+
+
+
+
