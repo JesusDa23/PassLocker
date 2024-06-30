@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { environment } from '../../environments/environment/environment';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form-register',
@@ -11,7 +11,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 
 export class FormRegisterComponent {
-  registerForm:any = FormGroup;
+  registerForm: any = FormGroup;
   passwordFieldType: string = 'password';
 
   constructor(private fb: FormBuilder) {
@@ -19,10 +19,10 @@ export class FormRegisterComponent {
       email: ['', [Validators.required, Validators.email]], // Validators.required y Validators.email
       fullName: ['', Validators.required],
       password: ['', [Validators.required, Validators.minLength(6), Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/)]],
+      confirmPassword: ['', Validators.required], // Añadir confirmPassword aquí
       userType: ['', Validators.required]
     }, {
-      confirmPassword: [''],
-      validators: this.passwordMatchValidator // Validador personalizado para confirmar contraseña
+      validators: this.passwordMatchValidator // Ajustar aquí
     });
   }
 
@@ -60,7 +60,8 @@ export class FormRegisterComponent {
       return;
     }
 
-    const user = this.registerForm.value;
+    // Crear objeto usuario sin confirmPassword
+    const { confirmPassword, ...user } = this.registerForm.value;
 
     try {
       const response = await axios.post(`${environment.apiUrl}/auth/request-register-account`, user);
@@ -92,14 +93,15 @@ export class FormRegisterComponent {
   }
 
   // Validador personalizado para confirmar contraseña
-  passwordMatchValidator(formGroup: FormGroup) {
+  passwordMatchValidator: ValidatorFn = (formGroup: AbstractControl): { [key: string]: any } | null => {
     const password = formGroup.get('password')?.value;
     const confirmPassword = formGroup.get('confirmPassword')?.value;
 
     if (password !== confirmPassword) {
       formGroup.get('confirmPassword')?.setErrors({ passwordMismatch: true });
+      return { passwordMismatch: true };
     } else {
-      formGroup.get('confirmPassword')?.setErrors(null);
+      return null;
     }
   }
 }
